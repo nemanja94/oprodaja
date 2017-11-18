@@ -14,7 +14,7 @@ if (isset($_SESSION['username']) && $_SESSION['username'] == 'admin@mail.com') {
         $emailError = null;
         $lozinkaError = null;
 
-        // keep track post values
+        // keep track post VALUSE
         $ime = htmlspecialchars($_POST['ime']);
         $prezime = htmlspecialchars($_POST['prezime']);
         $email = htmlspecialchars($_POST['email']);
