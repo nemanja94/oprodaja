@@ -10,6 +10,9 @@ if (isset($_SESSION['username']) && isset($_POST['pretraga_input']) && isset($_P
     $uslov1 = htmlspecialchars('%' . $_POST['pretraga_input']) . '%';
     $uslov2 = '%' . htmlspecialchars($_POST['pretraga_input']);
     $uslov3 = htmlspecialchars($_POST['pretraga_input']) . '%';
+    $uslov11 = strtoupper(uslov1);
+    $uslov21 = strtoupper(uslov2);
+    $uslov31 = strtoupper(uslov3);
 
     $pdo = Database::connect();
 
@@ -20,9 +23,9 @@ if (isset($_SESSION['username']) && isset($_POST['pretraga_input']) && isset($_P
                                                AND (
                                                  Aukcija.Artikli.artikl_naziv LIKE :uslov1
                                                  OR
-                                                 Aukcija.Artikli.artikl_naziv LIKE :uslov1
+                                                 Aukcija.Artikli.artikl_naziv LIKE :uslov2
                                                  OR
-                                                 Aukcija.Artikli.artikl_naziv LIKE :uslov1)");
+                                                 Aukcija.Artikli.artikl_naziv LIKE :uslov3)");
 
     $query->bindParam(':email', $korisnicko_ime);
     $query->bindParam(':uslov1', $uslov1);

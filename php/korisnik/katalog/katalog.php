@@ -95,7 +95,7 @@ if (isset($_SESSION['username'])) {
         <div class="container">
             <div class="row">
                 <form class="form-group" action="katalog_pretraga.php" method="post"
-                      style="margin-right: -16%; float: right;">
+                      style="float: right;">
                     <label style="float: left">Pronađi predmet:</label>
                     <br>
                     <input class="form-control" name="pretraga_input" placeholder="Naziv predmeta">

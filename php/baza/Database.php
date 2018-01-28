@@ -6,7 +6,7 @@ class Database
     private static $dbName = 'Aukcija'; // Naziv baze
     private static $dbHost = 'localhost'; // Dodati hosta
     private static $dbUsername = 'root'; // Dodati username
-    private static $dbUserPassword = 'Root@1211'; // Dodati password
+    private static $dbUserPassword = 'root'; // Dodati password
 
     private static $cont = null;
 

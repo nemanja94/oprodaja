@@ -78,7 +78,7 @@ if (isset($_SESSION['username']) && $_SESSION['username'] == 'admin@mail.com') {
         <div class="container">
             <div class="row">
                 <form class="form-group" action="korisnik_pretraga.php" method="post"
-                      style="margin-right: -16%; float: right;">
+                      ; float: right;">
                     <label style="float: left">Pronađi korisnika:</label>
                     <br>
                     <input class="form-control" name="pretraga_input" type="search" placeholder="Email korisnika">
